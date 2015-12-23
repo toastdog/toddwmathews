@@ -1,0 +1,30 @@
+/*! 
+Stylesheet for ToddWMathews.com
+copyright toddwmathews.com 2016
+*/
+@media (min-width: 481px) {
+  .container {
+    font-family: Verdana, Arial, Sans-Serif;
+    color: #000;
+    background-color: #b5b5b7; }
+    .container div {
+      display: inline-block;
+      vertical-align: top; }
+    .container .title {
+      display: inline-block;
+      border: 1px solid black;
+      max-width: 70%;
+      right: 0; }
+      .container .title div {
+        display: inline;
+        text-align: center; }
+
+  .navigation nav ul li {
+    display: inline-block; }
+    .navigation nav ul li a {
+      text-decoration: none;
+      font-family: Verdana, Arial, Sans-Serif;
+      color: #000;
+      background-color: #b5b5b7; } }
+
+/*# sourceMappingURL=style.css.map */

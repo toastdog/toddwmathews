@@ -1,0 +1,94 @@
+/*! 
+About Me Stylesheet
+*/
+/*! color pallett: #252839, 677077, b5b5b7, #fff, #a3161d 
+*/
+$mainbackgroundcolor: #b5b5b7;
+$secondarybackgroundcolor: #252839;
+$mainfontcolor: #000;
+$headerfontcolor: #a3161d;
+$secondaryfontcolor: #fff;
+$mainfontfamily: Verdana, Arial, Sans-Serif;
+
+.container{
+	background-color: $mainbackgroundcolor;
+	color: $mainfontcolor;
+	margin: 0;
+	font-family: $mainfontfamily;
+	.my-background{
+		margin: 10px 10px 0 10px;
+		h1{color: $headerfontcolor;}
+		padding: 10px;
+	}
+	.my-personality{
+		background-color: $secondarybackgroundcolor;
+		color: $secondaryfontcolor;
+		margin: 0;
+
+	}
+
+	.personality-trait{
+		margin: 20px;
+		display: inline-block;
+		position: relative;
+		div{
+			display: inline-block;
+			vertical-align: middle;
+			color: $secondaryfontcolor;
+			
+		}
+		#icon-creative{
+			left: 0;
+			width: 174px;
+			height: 174px;
+			border-radius: 10px;
+			box-shadow: #000 0px 0px 22px 0px;
+			background: url('img/icons/icons_toddwmathews.png') -768px 0;
+			zoom: 0.5;
+			-moz-transform: scale(0.33);
+			margin: 10px;			
+		}
+		#icon-organized{
+			@extend #icon-creative;
+			background: url('img/icons/icons_toddwmathews.png') -576px 0;
+		}
+		#icon-leader{
+			@extend #icon-creative;
+			background: url('img/icons/icons_toddwmathews.png') -1px 0;
+		}
+		#icon-done{
+			@extend #icon-creative;
+			background: url('img/icons/icons_toddwmathews.png') -194px 0;
+		}
+		#icon-process{
+			@extend #icon-creative;
+			background: url('img/icons/icons_toddwmathews.png') -385px 0;
+		}
+	}
+	.personality-trait:hover:after{
+		background: #333;
+	    background: rgba(0,0,0,.8);
+	    border-radius: 5px;
+	    bottom: 80px;
+	    color: #fff;
+	    content: attr(title);
+	    left: 5%;
+	    padding: 5px 15px;
+	    position: absolute;
+	    z-index: 98;
+	    width: 220px;
+	}
+	.personality-trait:hover:before{
+		border: solid;
+	    border-color: #000 transparent;
+	    border-width: 6px 6px 0 6px;
+	    bottom: 75px;
+	    content: "";
+	    left: 10%;
+	    position: absolute;
+	    z-index: 99;
+
+	}
+
+
+}
